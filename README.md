@@ -1,10 +1,8 @@
-# STM32-detection
-更新内容：
+## STM32-detectio
 
-![](https://www.cirmall.com/upload/images/FmeMts-YCAiyiuzcXEVy9c4lXGZI/IMG_20170126_215534.jpg)
+![FmeMts-YCAiyiuzcXEVy9c4lXGZI.jpg](https://image.tobeshow.top/2019/04/13/FmeMts-YCAiyiuzcXEVy9c4lXGZI.jpg)
 
 一、SD卡记录功能。
-
 自动识别有无SD卡，支持4G以下SD卡。
 
 下图为SD卡记录的数据。以日期为文件名自动创建文件。
