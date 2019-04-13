@@ -5,7 +5,7 @@
 #include "stdio.h"	
 #include <string.h>
 #include <stdint.h>
-
+//ESP8266采用AT指令模式
 void ESP8266_AT_Setting(char *cmd, u16 timeout)
 {
 	USART3_BUF_Clear();
