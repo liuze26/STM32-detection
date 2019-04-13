@@ -1,0 +1,10 @@
+Output: Cadnetix Netlist
+Type  : CadnetixNetlist
+From  : Project [STM32气象站.PrjPcb]
+   Generated File[电路图.NET]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 19:33:19 On 2017/7/9

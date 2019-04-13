@@ -1,0 +1,125 @@
+PARTS LIST
+
+CR1220            CR1220          B1
+Cap               1608[0603]      C1
+Cap               1608[0603]      C2
+Cap               1608[0603]      C3
+Cap Pol1          C1210           C4
+Cap Pol1          C1210           C5
+Cap               1608[0603]      C6
+Cap               1608[0603]      C7
+Cap               C0805           C8
+Cap               C0805           C9
+Cap               1608[0603]      C10
+Cap               1608[0603]      C11
+Cap               1608[0603]      C12
+Cap               1608[0603]      C13
+Cap               1608[0603]      C14
+Cap               1608[0603]      C15
+Cap               1608[0603]      C16
+1N4148            DO-35           D1
+1N4148            DO-35           D2
+LED2              C0805           D3
+LED2              C0805           D4
+LED2              C0805           D5
+DC-Power          DC-Power        J1
+USB-MINI          USB-MINI        P1
+Header 3          HDR1X3          P2
+Header 3          HDR1X3          P3
+Res2              1608[0603]      R1
+Res2              C0805           R2
+Res2              C0805           R3
+Res2              C0805           R4
+Res2              1608[0603]      R5
+Res2              1608[0603]      R6
+Res2              1608[0603]      R7
+Res2              1608[0603]      R8
+Res2              1608[0603]      R9
+SW-PB             KEY             S1
+AMS1117           SOT223_N        U1
+AM2320            HDR1X4          U2
+BH1750            HDR1X5          U3
+RX8025            SOP14           U4
+ESP8266-01S       ESP-8P          U5
+STM32F103CBT6     LQFP48_L        U6
+PM2.5             PT-8P           U7
+BMP280            HDR1X6          U8
+TF-Card           TF-Card         U9
+W25QXX            SOIC8           U10
+8M                OSC             Y1
+EOS
+NET LIST
+
+NODENAME TxD              $
+    P3         2  U6        30
+NODENAME SWDIO            $
+    P2         2  U6        34
+NODENAME SWCLK            $
+    P2         3  U6        37
+NODENAME SDA              $
+    U2         2  U3         2  U4        13  U6        43
+NODENAME SCL              $
+    U2         4  U3         3  U4         2  U6        42
+NODENAME RxD              $
+    P3         3  U6        31
+NODENAME NetB1_+          $
+    B1         +  D1         1
+NODENAME NetC2-2          $
+    C2         2  D1         2  D2         2  U4         6
+NODENAME NetC8-2          $
+    C8         2  U6         5  Y1         1
+NODENAME NetC9-2          $
+    C9         2  U6         6  Y1         2
+NODENAME NetD3-1          $
+    D3         1  R6         1
+NODENAME NetD3-2          $
+    D3         2  U6        39
+NODENAME NetD4-1          $
+    D4         1  R7         1
+NODENAME NetD4-2          $
+    D4         2  U6        40
+NODENAME NetD5-1          $
+    D5         1  R8         1
+NODENAME NetD5-2          $
+    D5         2  U6        41
+NODENAME NetP1-2          $
+    P1         2  R2         1
+NODENAME NetP1-3          $
+    P1         3  R3         1  R4         2
+NODENAME NetR5-2          $
+    R5         2  U6        44
+NODENAME NetS1-2          $
+    S1         2  U6        11
+NODENAME NetR1-1          $
+    R1         1  U4        10  U6         2
+NODENAME NetU6-3          $
+    U6         3  U8         5
+NODENAME NetC16-2         $
+    C16        2  R9         1  U6         7
+NODENAME NetU6-10         $
+    U6        10  U10        1
+NODENAME NetU6-13         $
+    U6        13  U7         5
+NODENAME NetU6-14         $
+    U6        14  U9         2
+NODENAME NetU6-15         $
+    U6        15  U8         3  U9         5  U10        6
+NODENAME NetU6-16         $
+    U6        16  U8         6  U9         7  U10        2
+NODENAME NetU6-17         $
+    U6        17  U8         4  U9         3  U10        5
+NODENAME NetU5-4          $
+    U5         4  U6        21
+NODENAME NetU5-8          $
+    U5         8  U6        22
+NODENAME NetR2-2          $
+    R2         2  U6        32
+NODENAME NetR3-2          $
+    R3         2  U6        33
+NODENAME GND              $
+    B1         -  C1         1  C2         1  C3         1  C4         2  C5         2  C6         1  C7         1  C8         1  C9         1  C10        1  C11        1  C12        1  C13        1  C14        1  C15        1  C16        1  J1         2  P1         5  P2         1  P3         1  R5         1  S1         1  U1         1  U2         3  U3         1  U3         4  U4        11  U5         1  U6         8  U6        23  U6        35  U6        47  U7         2  U8         2  U9         6  U10        4
+NODENAME 5V               $
+    C4         1  C5         1  C6         2  J1         1  U1         3  U7         1
+NODENAME 3V3              $
+    C1         2  C3         2  C7         2  C10        2  C11        2  C12        2  C13        2  C14        2  C15        2  D2         1  R1         2  R4         1  R6         2  R7         2  R8         2  R9         2  U1         4  U2         1  U3         5  U5         5  U5         7  U6         9  U6        24  U6        36  U6        48  U8         1  U9         4  U10        3  U10        7  U10        8
+EOS
